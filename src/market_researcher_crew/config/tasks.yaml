@@ -1,0 +1,196 @@
+market_research_task:
+  description: |
+    Conduct a comprehensive, high-quality market research study for {product_or_company_name} in the {target_market_or_industry} sector.
+
+    Core objectives:
+    - Size and segment the total addressable market (TAM), serviceable addressable market (SAM), and realistically obtainable market (SOM) over the next 3–5 years
+    - Map major market trends, macro drivers, technology shifts, regulatory changes, and emerging customer expectations shaping the category
+    - Identify and deeply profile the top 5–8 customer segments / personas (demographics, firmographics, psychographics, Jobs-to-be-Done, pain points, buying criteria, willingness-to-pay)
+    - Perform a structured analysis of purchase drivers, barriers, decision journey, and key influencers across B2B / B2C contexts as applicable
+    - Assess overall market attractiveness using a multi-factor framework (growth rate, profitability, competitive intensity, entry barriers, substitution threat, customer power, supplier power)
+    - Surface the 3–5 most important white-space opportunities or underserved needs with the highest potential strategic & economic value
+    - Highlight material risks (demand risk, competitive risk, technology disruption risk, regulatory risk, macroeconomic risk)
+
+    Deliverable structure (use this exact section order):
+    1. Executive Summary (1-page max – key facts, biggest opportunities, biggest risks, one-sentence strategic recommendation)
+    2. Market Size & Growth Trajectory (TAM/SAM/SOM, 3–5 year CAGR forecasts, key sources)
+    3. Macro & Industry Trends (5–8 most consequential forces with evidence)
+    4. Customer Landscape & Segmentation (detailed personas + Jobs-to-be-Done)
+    5. Buying Behavior & Decision Journey Map
+    6. Market Attractiveness Assessment (structured scoring or radar chart narrative)
+    7. Opportunity & White-Space Analysis (prioritized list with sizing rationale)
+    8. Key Risks & Uncertainties (ranked by probability × impact)
+    9. Strategic Implications & Recommendations (clear, prioritized, outcome-oriented)
+
+    Tone & style requirements:
+    - Executive-level clarity and brevity — every sentence must matter
+    - Evidence-based — cite credible sources (Statista, Gartner, IDC, company filings, industry reports, primary research proxies)
+    - Balanced and intellectually honest — highlight both bullish and bearish signals
+    - Visually supported — describe where charts, tables, or frameworks would add value (even if you cannot generate visuals directly)
+    - Action-oriented — every insight should clearly imply “so what” for strategy, product, go-to-market, or investment decisions
+
+    Use all available tools aggressively: web search, browsing key reports/sites, analysis of public financials, X/Twitter sentiment & discussion, competitor announcements, etc.
+  expected_output: |
+    A professional-grade market research report (Markdown format preferred) following the exact 9-section structure above.
+    Aim for 2,500–4,500 words total (concise yet comprehensive).
+    Include inline source references / footnotes wherever data or claims are not common knowledge.
+  agent: market_research_specialist
+
+competitive_intelligence_task:
+  description: |
+    Perform a deep, multi-source competitive intelligence assessment for {your_company_or_product_name} against the primary competitors in the {target_market_or_industry} space.
+
+    Core objectives:
+    - Identify and prioritize the top 4–7 direct and relevant indirect competitors (based on market share, feature overlap, target customer segments, pricing tier, and recent momentum)
+    - Build detailed competitor profiles including: company overview, funding/ownership history, leadership team changes, key product portfolio, go-to-market motion (self-serve vs. enterprise, channel strategy), geographic footprint, and estimated revenue/ARR trajectory where inferable
+    - Conduct feature-by-feature comparative analysis against {your_company_or_product_name} across the most decision-critical dimensions (core capabilities, differentiators, UX/developer experience, integrations/ecosystem, performance/scalability, security/compliance, support/SLA, innovation velocity)
+    - Map competitive positioning: messaging pillars, value propositions, target buyer personas, perceived strengths/weaknesses from customer & analyst perspective
+    - Analyze recent moves & signals: last 12–18 months product launches, pricing changes, major partnerships/alliance shifts, executive hires/fires, funding rounds, customer wins/losses, public roadmaps/announcements, patent filings, job postings indicating strategic priorities
+    - Perform structured threat assessment: Porter’s Five Forces lens where relevant, moat analysis (network effects, switching costs, data advantages), substitution risks, potential disruption vectors
+    - Surface 3–5 highest-impact strategic implications: where we are vulnerable today, where competitors are weak/exploitable, early-warning indicators to monitor, recommended proactive countermeasures
+
+    Deliverable structure (follow this exact order):
+    1. Executive Summary (1-page max – current competitive landscape snapshot, biggest threats/opportunities, one-sentence “so what” for leadership)
+    2. Competitor Landscape Overview (tiering: leader / challenger / niche / emerging)
+    3. Detailed Competitor Profiles (1–1.5 pages each, consistent format)
+    4. Head-to-Head Feature & Capability Comparison Matrix (table + narrative commentary on meaningful gaps)
+    5. Positioning & Messaging Comparison (key claims, differentiators, weak spots)
+    6. Recent Competitive Activity Timeline & Signals (chronological highlights + implications)
+    7. Threat & Opportunity Heatmap / Prioritization Matrix
+    8. Strategic Recommendations & Actionable Playbook (prioritized initiatives for product, marketing, sales, pricing)
+    9. Monitoring & Early-Warning Dashboard Suggestions (key indicators, sources to watch quarterly)
+
+    Tone & style requirements:
+    - Ruthlessly factual and source-triangulated — never speculate; clearly label estimates vs. confirmed data
+    - Balanced & intellectually honest — present both our advantages and genuine vulnerabilities
+    - Executive crispness — short sentences, strong active voice, every paragraph ends with implication
+    - Evidence-heavy — inline citations / footnotes for all non-obvious claims (company sites, press releases, Crunchbase, LinkedIn, earnings calls, job boards, G2/Capterra/TrustRadius, analyst reports, X announcements, etc.)
+    - Action-focused — every major section ends with clear “so what” and recommended next moves
+    - Describe recommended visuals (matrices, timelines, 2×2 maps, radar charts) even if not generating them directly
+
+    Aggressively leverage all available tools: web search, site browsing (competitor sites, blogs, careers pages), X/Twitter monitoring for executive & company signals, semantic & keyword searches for sentiment/news, public financial/SEC filings where applicable.
+  expected_output: |
+    A professional-grade competitive intelligence briefing/report in Markdown format, strictly following the 9-section structure above.
+    Target length: 2,800–5,000 words (concise yet comprehensive; prioritize signal over volume).
+    Include source references/footnotes for credibility and traceability.
+  agent: competitive_intelligence_analyst
+
+customer_insights_task:
+  description: |
+    Conduct a deep, mixed-methods customer insights investigation for {product_or_company_name} targeting the {target_customer_segment_or_use_case} in the {industry_or_market_context}.
+
+    Core objectives:
+    - Develop 4–7 richly detailed customer personas / archetypes (demographic/firmographic profile, psychographics, behavioral patterns, primary goals & Jobs-to-be-Done, emotional drivers, frustrations & anxiety points)
+    - Map the end-to-end customer journey (awareness → consideration → purchase → onboarding → usage → expansion/renewal/advocacy) including key touchpoints, micro-moments, friction points, delight moments, and drop-off risks
+    - Identify and prioritize the top 6–10 unmet needs, latent pain points, or "struggling moments" that represent the highest opportunity for differentiation and value creation
+    - Surface core decision criteria, purchase barriers, switching triggers, loyalty drivers, and willingness-to-pay signals across segments
+    - Quantify (where possible) or directionally estimate relative importance / intensity of needs/pains using proxies from reviews, forums, support tickets, social listening, survey benchmarks, or analyst frameworks
+    - Capture emerging attitudinal & behavioral shifts (e.g. rising expectations around speed, personalization, sustainability, privacy, AI assistance, self-service)
+    - Highlight segment-specific differences in needs, journey, economics, and adoption readiness
+    - Derive 3–5 highest-leverage strategic implications for product design, messaging, pricing, onboarding, retention, and go-to-market
+
+    Deliverable structure (follow this exact order):
+    1. Executive Summary (1-page max – most important customer truths, biggest unmet needs, strongest implications, one-sentence strategic north star)
+    2. Customer Landscape & Segmentation Overview (key segments + sizing proxies)
+    3. Detailed Personas / Archetypes (4–7, consistent format: demographics, goals, pains, jobs, quotes/proxies)
+    4. End-to-End Customer Journey Map (phases, touchpoints, emotions, friction & delight points)
+    5. Core Unmet Needs & Pain Points Prioritization (ranked list/table with evidence strength & impact rationale)
+    6. Decision Drivers, Barriers & Loyalty Levers
+    7. Emerging Trends & Shifting Expectations
+    8. Segment-Specific Nuances & Economic Signals (where relevant: CLV proxies, price sensitivity, adoption hurdles)
+    9. Strategic Implications & Actionable Recommendations (prioritized by potential business impact – product, CX, marketing, pricing, retention)
+
+    Tone & style requirements:
+    - Deeply empathetic yet analytically disciplined — ground every claim in customer language/behavior
+    - Evidence-based — cite proxies wherever possible (G2/TrustRadius/Capterra reviews, Reddit/LinkedIn/X discussions, App Store/Google Play comments, public support forums, earnings call mentions of customer feedback, analyst reports on user sentiment)
+    - Balanced — show both love & hate; avoid rose-tinted or overly negative bias
+    - Human-centered — use real or closely paraphrased customer language/quotes when available
+    - Action-oriented — every major insight must end with clear “so what” for product, experience, or commercial strategy
+    - Visually descriptive — indicate where journey maps, needs prioritization matrices, emotion curves, comparison tables, or quote clouds would add value
+
+    Aggressively leverage all available tools: web & X searches for reviews/sentiment, browsing of review platforms, forums, social channels, competitor communities, public NPS benchmarks, analyst CX reports, etc.
+  expected_output: |
+    A professional-grade customer insights report in Markdown format, strictly following the 9-section structure above.
+    Target length: 2,500–4,500 words (deep yet concise; prioritize high-signal customer voice and implications).
+    Include source references / footnotes for traceability (review sites, forum threads, social posts, reports).
+  agent: customer_insights_researcher
+
+product_strategy_task:
+  description: |
+    Develop a high-impact, defensible product strategy for {product_name_or_category} targeting {target_market_or_customer_segment} in the {industry_or_competitive_context}, aligned with {company_name_or_business_objectives}.
+
+    Core objectives:
+    - Define a clear, inspiring yet achievable product vision (3–10 year horizon) that solves meaningful customer problems and creates differentiated value
+    - Establish strategic diagnosis: key market challenge/opportunity, core constraints, and winning aspiration (inspired by Rumelt/Playing to Win frameworks)
+    - Articulate guiding policy: where to play (customer segments, use cases, geographies, pricing tiers) and how to win (core differentiators, moat-building levers: network effects, data advantages, switching costs, speed-to-value, ecosystem, brand, etc.)
+    - Prioritize 3–5 focused strategic choices / bets: what we will do more of, less of, start, stop — with explicit trade-offs
+    - Size & sequence major opportunities: opportunity maps, value pools, 3–5 year outcome trajectory (revenue, usage, retention, market share proxies)
+    - Build coherent initiative portfolio: themes/epics tied to bets, success metrics, dependencies, risks
+    - Outline supporting elements: monetization model evolution, go-to-market alignment, resource implications, key assumptions to validate
+    - Surface major risks & countermeasures (disruption vectors, execution gaps, competitive response)
+
+    Deliverable structure (follow this exact order):
+    1. Executive Summary (1-page max – vision in one sentence, biggest bets, expected 3–5 year impact, one-sentence call to action for leadership)
+    2. Strategic Diagnosis (challenge/opportunity framing, key constraints, diagnosis summary)
+    3. Product Vision & North Star (3–10 year aspiration, vivid future-state description)
+    4. Where to Play & How to Win (segment/use-case choices, differentiators, moat analysis)
+    5. Strategic Choices & Trade-offs (explicit what-we-will / will-not-do list with rationale)
+    6. Opportunity & Initiative Portfolio (prioritized themes, sizing, sequencing, outcome map)
+    7. Success Metrics & Measurement Framework (leading/lagging indicators, OKR alignment)
+    8. Monetization, GTM & Ecosystem Alignment (model evolution, channel strategy, partner plays)
+    9. Key Risks, Assumptions & Validation Plan (ranked risks × impact/probability, early signals to monitor)
+    10. Next 6–12 Month Roadmap Foundation (high-level initiatives, milestones, resourcing asks)
+
+    Tone & style requirements:
+    - First-principles, intellectually rigorous — challenge assumptions, show trade-offs openly
+    - Bold yet pragmatic — visionary language balanced with realistic execution grounding
+    - Evidence-informed — reference market data, customer insights, competitive signals, benchmarks (from prior research or real-time sources)
+    - Executive crisp — short, powerful sentences; active voice; every section ends with clear implications
+    - Visual storytelling — describe where frameworks would shine: vision canvas, opportunity 2×2, choice matrix, theme roadmap, moat radar, bet portfolio waterfall
+    - Action-oriented — every major section ties directly to decisions (prioritization, resourcing, alignment)
+
+    Aggressively leverage inputs from prior agents/tasks (market research, competitive intel, customer insights) + real-time tools: web search for benchmarks/frameworks, browsing strategy articles/templates, X for emerging trends/announcements, etc.
+  expected_output: |
+    A professional-grade product strategy document in Markdown format, strictly following the 10-section structure above.
+    Target length: 2,800–5,500 words (deep yet focused; prioritize clarity and decisiveness over volume).
+    Include inline references/footnotes for key data points, frameworks, or external signals.
+  agent: product_strategy_adviser
+
+business_analyst_task:
+  description: |
+    Conduct a rigorous, data-driven business and financial analysis for {product_or_company_name} operating within the {target_market_or_industry} sector.
+
+    Core objectives:
+    - Evaluate current financial health, revenue streams, cost structures, and overall profitability metrics.
+    - Deep dive into unit economics (e.g., CAC, LTV, gross margins, payback periods) and compare them against industry benchmarks.
+    - Analyze the viability and scalability of the current business/monetization model, identifying pricing elasticity and new revenue opportunities.
+    - Identify operational bottlenecks, workflow inefficiencies, and areas for structural optimization to improve bottom-line performance.
+    - Model financial projections and ROI for proposed strategic initiatives, product launches, or market expansions.
+    - Assess resource allocation, capital efficiency, and operational capacity required to execute the strategic roadmap.
+    - Perform a sensitivity analysis on key business drivers to quantify downside risks and upside potential.
+
+    Deliverable structure (follow this exact order):
+    1. Executive Summary (1-page max – bottom-line financial health, biggest operational gaps, one-sentence overarching recommendation)
+    2. Current State Financial Overview & Unit Economics (revenue run-rate, margins, CAC/LTV ratios, burn rate/cash flow analysis)
+    3. Business Model & Monetization Assessment (pricing strategy effectiveness, revenue stream diversification, elasticity)
+    4. Operational Efficiency & Process Gaps (value chain analysis, resource bottlenecks, utilization rates)
+    5. Financial Projections & Scenario Modeling (3–5 year forecast scenarios: base, upside, downside)
+    6. ROI & Capital Allocation Assessment (cost-benefit analysis of proposed strategic bets / product initiatives)
+    7. Resource & Infrastructure Requirements (budget implications, headcount modeling, technology/CapEx needs)
+    8. Risk Management & Sensitivity Analysis (quantified financial/operational risks, mitigation strategies)
+    9. Actionable Business Recommendations (prioritized initiatives to optimize margins, accelerate growth, and improve operations)
+
+    Tone & style requirements:
+    - Highly quantitative and analytical — ground every insight in hard numbers, KPIs, and financial metrics.
+    - Evidence-based — cite credible sources (SEC filings, earnings call transcripts, benchmark reports, industry KPIs, macroeconomic data).
+    - Executive crispness — short sentences, strong active voice, direct bottom-line-up-front (BLUF) communication.
+    - Visually descriptive — explicitly state where financial models, waterfall charts, sensitivity tables, or process flowcharts would add value.
+    - Action-oriented — every insight must translate into a clear recommendation for cost-saving, revenue-generation, or operational restructuring.
+
+    Aggressively leverage all available tools: web search, financial databases, public SEC/company filings, investor presentations, industry benchmark reports, and macroeconomic trend data.
+  expected_output: |
+    A professional-grade business and financial analysis report in Markdown format, strictly following the 9-section structure above.
+    Target length: 2,500–4,500 words (dense with data, concise in prose).
+    Include inline source references / footnotes for all financial benchmarks, industry averages, and external data points.
+  agent: senior_business_analyst
+  
