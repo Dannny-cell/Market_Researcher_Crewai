@@ -2,7 +2,6 @@
 import sys
 import warnings
 import json
-from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -10,17 +9,31 @@ from market_researcher_crew.crew import MarketResearcherCrew
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
+
 def get_inputs():
     """Helper to supply variables required by tasks.yaml"""
     return {
-        'product_or_company_name': 'AutoAgentX',
-        'target_market_or_industry': 'Autonomous AI Agents',
-        'your_company_or_product_name': 'AutoAgentX',
-        'target_customer_segment_or_use_case': 'Enterprise Engineering Teams',
-        'industry_or_market_context': 'B2B Developer Tools',
-        'product_name_or_category': 'AI Agent Orchestration Platform',
-        'company_name_or_business_objectives': 'Capture 15% of the enterprise AI orchestration market in San Francisco and globally within 3 years'
+        # --- shared across multiple tasks ---
+        'product_or_company_name':              'AutoAgentX',
+        'target_market_or_industry':            'Autonomous AI Agents',
+
+        # --- competitive_intelligence_task ---
+        'your_company_or_product_name':         'AutoAgentX',
+
+        # --- customer_insights_task ---
+        'target_customer_segment_or_use_case':  'Enterprise Engineering Teams',
+        'industry_or_market_context':           'B2B Developer Tools',
+
+        # --- product_strategy_task ---
+        'product_name_or_category':             'AI Agent Orchestration Platform',
+        'target_market_or_customer_segment':    'Enterprise Engineering Teams',     # ✅ Fixed: was missing
+        'industry_or_competitive_context':      'B2B Developer Tools / AI Tooling', # ✅ Fixed: was missing
+        'company_name_or_business_objectives':  (
+            'Capture 15% of the enterprise AI orchestration market '
+            'in San Francisco and globally within 3 years'
+        ),
     }
+
 
 def run():
     """Run the crew."""
@@ -29,12 +42,18 @@ def run():
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
+
 def train():
     """Train the crew for a given number of iterations."""
     try:
-        MarketResearcherCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=get_inputs())
+        MarketResearcherCrew().crew().train(
+            n_iterations=int(sys.argv[1]),
+            filename=sys.argv[2],
+            inputs=get_inputs()
+        )
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
+
 
 def replay():
     """Replay the crew execution from a specific task."""
@@ -43,12 +62,18 @@ def replay():
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
 
+
 def test():
     """Test the crew execution and returns the results."""
     try:
-        MarketResearcherCrew().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=get_inputs())
+        MarketResearcherCrew().crew().test(
+            n_iterations=int(sys.argv[1]),
+            eval_llm=sys.argv[2],
+            inputs=get_inputs()
+        )
     except Exception as e:
         raise Exception(f"An error occurred while testing the crew: {e}")
+
 
 def run_with_trigger():
     """Run the crew with trigger payload."""
@@ -66,6 +91,7 @@ def run_with_trigger():
         return MarketResearcherCrew().crew().kickoff(inputs=inputs)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew with trigger: {e}")
+
 
 if __name__ == "__main__":
     run()
