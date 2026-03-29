@@ -34,7 +34,7 @@ market_research_task:
     A professional-grade market research report (Markdown format preferred) following the exact 9-section structure above.
     Aim for 2,500–4,500 words total (concise yet comprehensive).
     Include inline source references / footnotes wherever data or claims are not common knowledge.
-  agent: market_research_specialist
+  
 
 competitive_intelligence_task:
   description: |
@@ -73,7 +73,7 @@ competitive_intelligence_task:
     A professional-grade competitive intelligence briefing/report in Markdown format, strictly following the 9-section structure above.
     Target length: 2,800–5,000 words (concise yet comprehensive; prioritize signal over volume).
     Include source references/footnotes for credibility and traceability.
-  agent: competitive_intelligence_analyst
+  
 
 customer_insights_task:
   description: |
@@ -113,7 +113,7 @@ customer_insights_task:
     A professional-grade customer insights report in Markdown format, strictly following the 9-section structure above.
     Target length: 2,500–4,500 words (deep yet concise; prioritize high-signal customer voice and implications).
     Include source references / footnotes for traceability (review sites, forum threads, social posts, reports).
-  agent: customer_insights_researcher
+  
 
 product_strategy_task:
   description: |
@@ -154,7 +154,7 @@ product_strategy_task:
     A professional-grade product strategy document in Markdown format, strictly following the 10-section structure above.
     Target length: 2,800–5,500 words (deep yet focused; prioritize clarity and decisiveness over volume).
     Include inline references/footnotes for key data points, frameworks, or external signals.
-  agent: product_strategy_adviser
+  
 
 business_analyst_task:
   description: |
@@ -192,5 +192,5 @@ business_analyst_task:
     A professional-grade business and financial analysis report in Markdown format, strictly following the 9-section structure above.
     Target length: 2,500–4,500 words (dense with data, concise in prose).
     Include inline source references / footnotes for all financial benchmarks, industry averages, and external data points.
-  agent: senior_business_analyst
+  
   
