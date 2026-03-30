@@ -18,7 +18,7 @@ Five specialized AI agents work sequentially, each producing a professional-grad
 
 ---
 
-## 📋 Expected Output
+## 📋 Output
 
 When you run `crewai run` with the default inputs (`AutoAgentX` / `Autonomous AI Agents`), the crew produces five sequential reports covering:
 
