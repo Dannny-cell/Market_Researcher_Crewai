@@ -4,10 +4,6 @@ A production-ready **multi-agent AI system** built with [crewAI](https://crewai.
 
 ---
 
-<img src="data:image/png;base64,PASTE_YOUR_FULL_CODE_HERE">
-
----
-
 ## 🚀 What It Does
 
 Five specialized AI agents work sequentially, each producing a professional-grade report:
